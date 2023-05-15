@@ -57,7 +57,7 @@
 
 
 </head>
-<body>
+<body class="fontFamily-poppins">
 
     <!-- the landing pagge -->
     <div id="landingpage" class="landingpage    w-screen  h-screen font-poppins relative">
@@ -73,7 +73,7 @@
             <div>
 
                 
-                <ul class="links hidden smalllaptop:flex space-x-[2rem] text-1.8xl font-bold text-brighterblue">
+                <ul class="links hidden smalllaptop:flex space-x-[2.4rem] font-semibold text-2xl text-gray-500">
                     <li><a href="">Home</a></li>
                     <li><a href="">Courses</a></li>
                     <li><a href="">Gallery</a></li>
@@ -129,25 +129,35 @@
             
         </nav>
 <!-- landing page content -->
-<div class="w-full h-full flex flex-col items-center justify-center font-extrabold text-3xl text-white">
- <h2 class="text-5xl text-white">Motto</h2>
+<div class="] w-full h-full flex flex-col  items-center justify-center font-extrabold text-3xl text-white ">
+ <h2 id="landingpage-title" class="text-5xl text-white uppercase">Motto</h2>
  <div class="w-1/4 my-6 h-1 bg-white "></div>
- <h3 class="text-6xl text-center py-10 smalllaptop:text-8xl capitalize">Our Abilities,Our Power,Our Future</h3>
- <a href="" class="p-8 mt-9 border-2 border- rounded-full transition-all duration-300 ease-linear hover:bg-black ">Read More</a>
+ <h3 id="landingpage-info" class="text-6xl text-center py-10 smalllaptop:text-8xl capitalize  w-[80vh]">Our Abilities<br>Our Power<br>Our Future</h3>
+ <a href="" class=" py-9 px-20 mt-9 border-2 border- rounded-full transition-all duration-300 ease-linear hover:bg-black ">Apply Now.</a>
+
+ <div id="btn" class="space-x-3 mt-9">
+  <button id="next-btn" class="clicked border-2 border-white w-7 h-7 rounded-full"></button>
+  <button id="next-btn"class="border-2 border-white  w-7 h-7 rounded-full"></button>
+  <button id="next-btn" class="border-2 border-white  w-7 h-7 rounded-full"></button>
+  
+ </div>
 </div>
+
+
     </div>
 
     <!--  after landing page-->
-    <section class="px-10 py-6 w-screen h-screen ">
+    <section class="px-10 py-6 w-screen h-screen  ">
 
-      <h3 class="capitalize  text-center bg-black p-3 text-white font-bold tablet:text-3xl text-2xl">Welcome to St Bakhita House Of Hope Vocational Training Centre.</h3>
+      <!-- title -->
+      <!-- <h3 class="capitalize  text-center bg-black p-3 text-white font-bold tablet:text-3xl text-2xl">Welcome to St Bakhita House Of Hope Vocational Training Centre.</h3> -->
       <!-- img -->
       <div class="tablet:flex w-full h-full  justify-between items-center gap-10">
 
    
-      <img src="./images/class.jpg" class="phone:w-full tablet:h-[450px] mt-3" alt="">
+     
       <!-- text and buton -->
-      <div class="flex flex-col  justify-start items-start  w-full   ">
+      <div class="flex-row-reverse  justify-start items-start  w-full   ">
         <p class=" text-[1.3rem] space-y-7 bg-gray-100 p-3 ">
 
           <br>
@@ -162,26 +172,136 @@
           </p>
 
           <button class="bg-brighterblue mt-5 p-6 tablet:mt-10 text-[1.5rem] text-white font-bold tablet:ml-5 transition-all duration-300 ease-linear hover:bg-darkblue">Read More ...</button>
+
+          
       </div>
+
+       <img src="./images/class.jpg" class="phone:w-full tablet:h-[450px] mt-3" alt="">
+
+       <div>
+        
+       </div>
     </div>
+
+   
     </section>
 
     <!-- images and testimanials -->
-    <section class="w-screen h-screen ">
+    <!-- <section class="w-screen h-screen ">
       <div class="flex h-[150px] space-x-7 w-full justify-between px-10 mt-5">
         <img class="" src="./images/class.jpg" alt="">
         <img src="./images/class.jpg" alt="">
         <img src="./images/class.jpg" alt="">
         <img src="./images/class.jpg" alt="">
-      </div>
+      </div> -->
      
       <!-- goals -->
-      <div>
+      <!-- <div>
         <h1>Our Goals</h1>
         
       </div>
-    </section>
+    </section> -->
     
+    <section class=" w-screen tablet:h-[50vh] px-10  flex flex-col justify-center items-center   ">
+      <!-- impact we made in the community -->
+     
+
+       <!-- motoo and values -->
+      <div class="h-3/4 bg-gray-200 px-5">
+        <h3 class="p-5 text-center text-5xl font-extrabold text-brighterblue ">
+          OUR GOALS
+        </h3>
+
+        <div class=" bg-gray-100 h-full tablet:flex  tablet:flex-row flex flex-col justify-center items-center gap-5 text">
+         
+ 
+         <!--  -->
+         <div class="bg-hoverblue flex flex-col justify-center items-center text-white h-full " >
+           <h1 class="text-5xl font-extrabold text-white mb-10 ">Vision.</h1>
+           <p class="text-2xl leading-9 w-[70%]">We envision a society where women/girls are economically self-sustained  and socially well engaged</p>
+         </div>
+ 
+         <div class="bg-hoverblue flex flex-col justify-center items-center text-white h-full  p-2">
+           <h1 class="text-5xl font-extrabold text-white mb-10 ">Mission.</h1>
+           <p class="text-2xl leading-9 w-[70%] "> To Build the capacity of women/girls in vocational skills,  enterprise development as well as community peace building</p>
+         </div>
+ 
+         <!-- <div class="bg-hoverblue flex flex-col justify-center items-center text-white p-20 h-1/2 ">
+           <h1 class="text-5xl font-extrabold text-white mb-10 ">Motto.</h1>
+           <p class="text-2xl leading-9 ">Uweza wetu, nguvu yetu, Kesho yetu(our Abilities, <br> our power, our future)</p>
+         </div> -->
+ 
+         <div class="bg-hoverblue flex flex-col justify-center items-center text-white h-full ">
+           <h1 class="text-5xl font-extrabold text-white mb-10 ">Core Values</h1>
+           <p class="text-2xl leading-9  w-[70%]">Creativity, Results Oriented, Innovation and Improvement, Diversity, Integrity, Compliance</p>
+         </div>
+         
+        </div>
+      </div>
+        <!-- ranking -->
+       
+      </div>
+
+    </section>
+
+    <!-- section with the impacts -->
+    <section class="tablet:h-[50vh] w-screen ">
+
+   
+      <h2 class="mt-20 text-5xl font-extrabold capitalize text-gray-500 text-center">
+        Our Impact In the community
+      </h2>
+
+      
+
+
+        <div class="flex  flex-row   items-center justify-center mt-20  space-x-7 ">
+
+          <div class="tablet:flex h-full gap-7   ">
+            <div class=" bg-gray-200 flex flex-col items-center justify-center p-20  ">
+              <h2 class="font-black text-5xl"><p class="num" data-val="840">840 </p>+</h2>
+              <p>Girls/women trained</p>
+            </div>
+    
+            <div class=" bg-gray-200 flex flex-col items-center justify-center p-20 ">
+              <h2 class="font-black text-5xl"><p class="num" data-val="3">3</p>+</h2>
+              <p>Courses Offered</p> 
+            </div>
+          </div>
+   
+
+
+          <div class="tablet:flex items-center justify-center gap-7">
+
+
+            <div class=" bg-gray-200 flex flex-col items-center justify-center p-20">
+              <h2 class="font-black text-5xl"><p class="num" data-val="940">940</p>+</h2>
+              <p>Girls in Computer</p>
+            </div>
+    
+    
+            <div class=" bg-gray-200 flex flex-col items-center justify-center p-20">
+              <h2 class="font-black text-5xl "><p class="num" data-val="4">4</p>+</h2>
+              <p>Supporters</p> 
+            </div>
+          </div>
+
+
+      </div>
+
+    </section>
+
+    <!-- testimonials part -->
+    <section class="w-screen h-screen bg-red-400 px-20"> 
+      <div class="h-1/2 bg-blue-200">
+
+      </div>
+      <div class="h-1/2 bg-green-500">
+
+      </div>
+
+    </section>
+
     <script src="./app.js"></script>
 </body>
 </html>

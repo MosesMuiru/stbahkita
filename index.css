@@ -1,5 +1,6 @@
 .landingpage{
-    background: linear-gradient(90deg, rgba(40,40,40,0.5) 100%, rgba(71, 70, 70, 0.7) 80%), url("./images/studen2.jpg");
+    background: linear-gradient(90deg, rgba(40,40,40,0.5) 60%, rgba(71, 70, 70, 0.4) 100%), url("./images/studen2.jpg");
+    background-color: #0066ff;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,3 +31,7 @@
    color: darkblue;
 }
 
+/* clicked overlapping btton */
+.clicked {
+    background-color: white;
+}
