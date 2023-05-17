@@ -6,6 +6,15 @@ const landingpage = document.getElementById("landingpage")
 const landingpageInfo = document.getElementById("landingpage-info")
 const landingpageTitle = document.getElementById("landingpage-title")
 const btn = document.getElementById("btn")
+const testimonial = document.querySelectorAll("#testimonial")
+const testiBtn = document.getElementById("testiBtn")
+console.log(testimonial.length, "testimonia")
+// when testimonial button is clicked
+testiBtn.addEventListener("click", () => {
+    testimonial.forEach((testi) => {
+        testi.classList.toggle("hidden")
+    })
+})
 
 
 
@@ -80,18 +89,19 @@ nextBtn.forEach((btn) => (
 let valueDisplays = document.querySelectorAll(".num")
 let interval = 3000
 
-// valueDisplays.forEach((value) => {
-//     let startValue = 0;
-//     // console.log(value.getAttribute())
-//     let endValaue = parseInt(value.getAttribute("data-val"));
-//     // getting time it takes
-//     let duration = Math.floor(interval / endValaue)
-//     let counter = setInterval(() => {
-//         startValue += 1;
-//         value.textContent = startValue
-//         if(startValue == endValaue) clearInterval(counter)
-//     },duration)
+valueDisplays.forEach((value) => {
+    let startValue = 0;
+    // console.log(value.getAttribute())
+    let endValaue = parseInt(value.getAttribute("data-val"));
+    // getting time it takes
+    let duration = Math.floor(interval / endValaue)
+    let counter = setInterval(() => {
+        startValue += 1;
+        value.textContent = startValue
+        if(startValue == endValaue) clearInterval(counter)
+    },duration)
 
     
-//     console.log(endValaue)
-// })
+    console.log(endValaue)
+})
+

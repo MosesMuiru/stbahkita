@@ -34,6 +34,7 @@
 
               fontFamily:{
                 poppins:["Poppins","san-serif"]
+           
               },
 
     screens: {
@@ -55,6 +56,14 @@
         
       </script>
 
+<!-- swipper -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
 </head>
 <body class="fontFamily-poppins">
@@ -74,16 +83,16 @@
 
                 
                 <ul class="links hidden smalllaptop:flex space-x-[2.4rem] font-semibold text-2xl text-gray-500">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Courses</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Contanct</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contanct</a></li>
                     <li><a href="">More</a></li>
                 </ul>
 
 
 
-                <ul id="mobileList" class="links hidden h-screen  absolute left-0 bg-slate-200 p-40 space-y-10 text-2xl font-bold text-brighterblue transition-all duration-300 ease-linear">
+                <ul id="mobileList" class="links hidden h-screen  absolute left-0 bg-slate-200  p-40 space-y-10 text-2xl font-bold text-brighterblue transition-all duration-300 ease-linear">
 
                   <li id="closeBtn" class="absolute top-4 right-10 text-2xl text-gray-500 cursor-pointer transition-all duration-300 p-3 ease-linear hover:bg-gray-800 hover:text-white rounded-sm"><i class="fa-sharp fa-solid fa-xmark "></i></li>
 
@@ -202,7 +211,7 @@
       </div>
     </section> -->
     
-    <section class=" w-screen tablet:h-[50vh] px-10  flex flex-col justify-center items-center   ">
+    <section class="w-screen tablet:h-[50vh] px-10  flex flex-col justify-center items-center   ">
       <!-- impact we made in the community -->
      
 
@@ -292,15 +301,132 @@
     </section>
 
     <!-- testimonials part -->
-    <section class="w-screen h-screen bg-red-400 px-20"> 
-      <div class="h-1/2 bg-blue-200">
+    <section class="w-screen tablet:h-screen  flex flex-col items-center justify-center"> 
+
+      <h1 class="pb-[8rem] text-[6rem] font-extrabold fontFamily-ibm tablet:leading-2 text-brighterblue">Testimonials</h1>
+
+      <div class="bg-blue-100 tablet:w-1/2 w-[80%]   ">
+     
+       
+        <div id="testimonial" class="flex flex-col items-center justify-center tablet:p-10 p-4">
+          <img src="./images/lili.jpg" class="w-[100px] h-[100px] rounded-full" alt="">
+
+          <p class="tablet:w-3/4 text-[1.5rem] tablet:p-5 w-full">
+            Without any doubt St Bakhita is the best hairdressing vocational training center there is, after graduation, i worked in a Salon and beauty parlor in Eldoret Town. After a year i was ready to go on my own by opening my own salon. One year later i had employees: a hairstylist and a nail art artist, I am able to feed my family. I could not accomplish this without their mentorship.
+          </p>
+          <i class="fa-solid fa-quote-left text-[5rem] tablet:text-[7rem] font-extrabold text-brighterblue "></i>
+          <p class="tablet:p-10 p-4 text-2xl font-bold">Lilian Wambui</p>
+          <p class="font-bold">Former Student</p>
+
+        </div>
+
+        <div id="testimonial" class="hidden">
+
+          <div class=" flex flex-col items-center justify-center tablet:p-10 p-4">
+            <img src="./images/person2.jpg" class="w-[100px] h-[100px] rounded-full" alt="">
+  
+            <p class="tablet:w-3/4 text-[1.5rem] tablet:p-5 w-full">
+             At St Bahkita, they don't only teach but also offer mentorship and entrepreneurship programs which have really shaped my carreer in dressmaking. I have gained valuable expertise in the field of tailoring and dressmaking. I have my own dressingmaking workshop were i create garments for clients ranging from school uniforms,dress,blouses curtains and also garmets repairs. I can fund my family.Thank you St Bahkita.
+            </p>
+            <i class="fa-solid fa-quote-left text-[5rem] tablet:text-[7rem] font-extrabold text-brighterblue "></i>
+            <p class="tablet:p-10 p-4 text-2xl font-bold">Jackline Nchagua</p>
+            <p class="font-bold">Former tudent</p>
+  
+          </div>
+        </div>
+
 
       </div>
-      <div class="h-1/2 bg-green-500">
 
+      
+      
+              <div class="w-full flex items-center justify-center my-10">
+      
+                <button id="testiBtn" class=" animate-bounce bg-blue-200 text-extrabold text-2xl text-center items-center p-5 rounded-full transition-all duration-200 linear hover:border-2 hover:bg-white hover:border-blue-500 "><i class="fa-solid fa-forward"></i></button>
+              </div>
+      
+
+    </section >
+
+    <section class="relative mt-[100px] pt-[2rem] flex flex-col w-screen tablet:h-[120vh]  ">
+      <!-- imaage/gallery -->
+      <!-- <div class="flex h-[100px] w-full items-center justify-center bg-red-500">
+         <img src="./images/comp.jpg" class="h-[100px]" alt=""> 
+        <img src="./images/class.jpg" alt="">
+        <img src="/images/studen2.jpg" alt="">
+      </div> -->
+
+      <div class="h-1/4  flex items-center justify-center gap-5 mt-[5rem]">
+        <img src="./images/class.jpg" class="hidden object-cover h-full" alt="">
+        <img src="./images/studen2.jpg" class="hidden object-cover h-full" alt="">
+        <img src="./images/class.jpg" class="object-cover h-full" alt="">
+
+        <button  class="ml-10 animate-bounce bg-blue-200 text-extrabold text-2xl text-center items-center p-5 rounded-full transition-all duration-200 linear hover:border-2 hover:bg-white hover:border-blue-500 "><i class="fa-solid fa-forward"></i></button>
+      
       </div>
 
+      <!-- sponsores -->
+      <div class=" flex flex-col items-center justify-start ">
+        <h2 class="py-10 text-blue-600 font-extrabold  text-5xl ">Our Sponsors and Partners</h2>
+
+        <div class="h-[150px] w-1/2 flex bg-red-50 items-center justify-center gap-8 ">
+          
+          <img src="./images/Eldohub.png" class="w-full h-full " alt="">
+          <img src="./images/elizabethlogo.jpg" class="w-full h-full " alt="">
+          <img src="./images/pomoclogo.jpg" class="w-full h-full " alt="">
+          <img src="./images/solviclogo.png" class="w-full h-full " alt="">
+  
+        </div>
+      </div>
+
+      
     </section>
+
+    <footer>
+
+      <!-- footer -->
+
+      <div class="bg-brighterblue h-1/4 mt-10 bottom-0 w-full p-10 flex flex-col justify-center items center">
+        <!-- head -->
+        
+        <h2 class=" text-center w-full flex flex-col items-center gap-5">
+          <img src="./images/logo.jpg" alt="" class="w-10 h-10 rounded-full object-cover">
+          <p class="text-2xl text-white capitalize font-extrabold ">st bahkita</p>
+        
+        </h2>
+        
+        <!-- contants -->
+        
+        <ul class=" gap-3 flex tablet:justify-center tablet:text-2xl justify-between  font-semibold text-1xl text-white my-5 ">
+          <li><a href="">Home</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Contanct</a></li>
+          <li><a href="">More</a></li>
+        </ul>
+        
+        <!-- links -->
+        
+        
+          <div class="text-black space-x-5 pt-5 text-center text-3xl">
+        
+                                
+        
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        
+              </div>
+        
+              <div class="bg-black text-center h-full">
+               <p class="text-2xl font-extrabold text-white p-10" >&copy; 2023. St Bakhita House Of Hope Vocational Training Centre. All Rights Reserved. </p>
+                
+        
+              </div>
+             
+      
+    </footer>
 
     <script src="./app.js"></script>
 </body>
