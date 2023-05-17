@@ -1,5 +1,6 @@
 .landingpage{
-    background: linear-gradient(90deg, rgba(40,40,40,0.5) 100%, rgba(71, 70, 70, 0.7) 80%), url("./images/studen2.jpg");
+    background: linear-gradient(90deg, rgba(40,40,40,0.5) 60%, rgba(71, 70, 70, 0.4) 100%), url("./images/studen2.jpg");
+    background-color: #0066ff;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,3 +31,51 @@
    color: darkblue;
 }
 
+/* clicked overlapping btton */
+.clicked {
+    background-color: white;
+}
+
+/* application form */
+.applyform{
+    padding: 10px;
+    padding-top: 3rem;
+    background-color: rgb(224, 224, 224);
+  
+
+}
+ .invalid{
+    border: 1px solid rgb(255, 43, 43);
+}
+.applyform label{
+    font-size: 1.5rem;
+    
+
+}
+.applyform input{
+        outline: none;
+        background-color: white;
+
+        height: 20px;
+        padding: 20px;
+        margin-left: 5px;
+}
+.names{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+}
+.courses{
+    background-color: white;
+    padding: 5px;
+    height: 30px;
+    font-weight: bold;
+
+}
+textarea{
+    width: 50vh;
+    height: 100px;
+    /* background-color: rgb(150, 150, 150); */
+}
