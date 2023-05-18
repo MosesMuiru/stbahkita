@@ -68,115 +68,182 @@
     
 
 </head>
-<body>
+<body class="font-poppins bg-blue-100">
     
 
-    <nav class=" tablet:px-20 py-4 flex justify-between bg-slate-100  items-center ">
-        <!-- log0 -->
-        <div>
-           <img src="./images/banner (1).jpg" class="w-20 h-30 rounded-full ml-10" alt="">
-        </div>
+  <nav class=" tablet:px-20 py-4 flex justify-between bg-slate-100  items-center ">
+    <!-- log0 -->
+    <div>
+       <img src="./images/banner (1).jpg" class="w-20 h-30 rounded-full ml-10" alt="">
+    </div>
 
 
-        <!-- links -->
-        <div>
+    <!-- links -->
+    <div>
 
-            
-            <ul class="links hidden smalllaptop:flex space-x-[2.4rem] font-semibold text-2xl text-gray-500">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./courses.html">Courses</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contanct</a></li>
-                <li><a href="">More</a></li>
-            </ul>
-
-
-
-            <ul id="mobileList" class="links hidden h-screen  absolute left-0 bg-slate-200  p-40 space-y-10 text-2xl font-bold text-brighterblue transition-all duration-300 ease-linear">
-
-              <li id="closeBtn" class="absolute top-4 right-10 text-2xl text-gray-500 cursor-pointer transition-all duration-300 p-3 ease-linear hover:bg-gray-800 hover:text-white rounded-sm"><i class="fa-sharp fa-solid fa-xmark "></i></li>
-
-                <li><a href="">Home</a></li>
-                <div class="line bg-gray-400"></div>
-                <li><a href="">Courses</a></li>
-                <div class="line bg-gray-400"></div>
-                <li><a href="">Gallery</a></li>
-                <div class="line bg-gray-400"></div>
-                <li><a href="">Contanct</a></li>
-                <div class="line bg-gray-400"></div>
-                <li><a href="">More</a></li>
-
-                <div class="text-black space-x-5 pt-5">
-
-                    
-
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                </div>
-
-
-            </ul>
-        </div>
-
-
-        <!-- communacation -->
-        <div class="font-bold text-darkblue hidden smalllaptop:block">
-            <i class="fa-solid fa-envelope" class="px-2"></i>stbakhitahoh@gmail.com <span class="mx-2">|</span>
-            <i class="fa-solid fa-phone"></i> +254114 544 368
-            
-        </div>
-
-        <!-- closing and opening buttons -->
-        <div class="smalllaptop:hidden">
-           
-            <!-- open -->
-            
-            <button id="openBtn" class="text-4xl text-gray-800 hover:text-gray-600 cursor-pointer px-7"><i class="fa-solid fa-bars-staggered"></i></button>
-           
-        </div>
         
-    </nav>
-    <section class=" w-screen tablet:h-screen  p-6 flex flex-col items-center justify-center">
+        <ul class="links hidden smalllaptop:flex space-x-[2.4rem] font-semibold text-2xl text-gray-500">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./apply.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
 
-      <div class=" w-1/2">
-        <h2 class="text-4xl capitalize font-extrabold text-gray-500 text-center py-5  tablet:mt-40">Application Form</h2>
-        <form action="" class="applyform flex flex-col justify-between  w-full h-full gap-5 text-xl tablet:gap-7 " >
+
+
+        <ul id="mobileList" class="links hidden h-screen  absolute left-0 bg-slate-200  p-40 space-y-10 text-2xl font-bold text-brighterblue transition-all duration-300 ease-linear">
+
+          <li id="closeBtn" class="absolute top-4 right-10 text-2xl text-gray-500 cursor-pointer transition-all duration-300 p-3 ease-linear hover:bg-gray-800 hover:text-white rounded-sm"><i class="fa-sharp fa-solid fa-xmark "></i></li>
+
+            <li><a href="./index.html">Home</a></li>
+            <div class="line bg-gray-400"></div>
+            <li><a href="./courses.html">Courses</a></li>
+            <div class="line bg-gray-400"></div>
+            <li><a href="./apply.html">Apply</a></li>
+            <div class="line bg-gray-400"></div>
+            <li><a href="./contact.html">Contanct</a></li>
+            <div class="line bg-gray-400"></div>
+            <li><a href="./about.html">about</a></li>
+
+            <div class="text-black space-x-5 pt-5">
+
+                
+
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+
+        </ul>
+    </div>
+
+
+    <!-- communacation -->
+    <div class="font-bold text-darkblue hidden smalllaptop:block">
+        <i class="fa-solid fa-envelope" class="px-2"></i>stbakhitahoh@gmail.com <span class="mx-2">|</span>
+        <i class="fa-solid fa-phone"></i> +254114 544 368
+        
+    </div>
+
+    <!-- closing and opening buttons -->
+    <div class="smalllaptop:hidden">
+       
+        <!-- open -->
+        
+        <button id="openBtn" class="text-4xl text-gray-800 hover:text-gray-600 cursor-pointer px-7"><i class="fa-solid fa-bars-staggered"></i></button>
+       
+    </div>
+    
+</nav>
+    <section class=" w-screen bg-gray-300  p-6 flex flex-col items-center justify-center">
+      <h2 class="text-4xl capitalize font-extrabold text-center py-5 my-20 text-brighterblue">Application Form</h2>
+      <div id="formappear" class=" smalllaptop:w-1/2 bg-gray-50 w-3/4 ">
+       
+        <form action="" class="applyform flex flex-col tablet:p-[100px] justify-center items-start  w-full  h-full gap-5 text-xl tablet:gap-7 p-5 " >
           <!-- <label for="fullname" class="text-xl capitalize font-bold text-gray-500 text-center py-5 tablet:py-20">Enter full Name</label> -->
-          <div class="names  " >
-            <label for="firstname" class="text-gray-500 font-bold">firstname 
-            <input type="text" placeholder="firstname" class="invalid">
-            </label>
+         
+            <label for="firstname" class=" name text-gray-500 font-bold text-[15px] ">Full name </label>
+            <input type="text" placeholder="full name" class="border bg-gray-200 text-black p-4 outline-none "  id="firstname" >
+            
 
-            <label for="firstname" class="text-gray-500 font-bold">Lastname
-            <input type="text" placeholder="lastname">
-            </label>
-          </div>
+           
+          
+          
      
 
      <!-- email -->
-     <label for="firstname" class="text-gray-500 font-bold">Email</label>
-          <input type="text" placeholder="email address">
+     <label for="email " class="text-gray-500 font-bold text-2xl mt-10">Email</label>
+          <input type="text" placeholder="email address" class="border  p-3  bg-gray-200 mb-10 outline-none" id="email">
 
-          <label for="firstname" class="text-gray-500 font-bold">Phone Number</label>
-          <input type="text" placeholder="Phone Number">
+          <div class="bg-gray-500 h-[1px] w-full "></div>
+          <label for="firstname" class="text-gray-500 font-bold mt-10 text-[15px] outline-none ">Phone Number</label>
+          <input type="text" placeholder="Phone Number" class="  p-3 mb-10  bg-gray-200 text-black outline-none" id="phonenumber">
 
-          <label for="firstname" class="text-gray-500 font-bold">Course</label>
-          <select name="course" class="courses">
+          <div class="bg-gray-500 h-[1px] w-full "></div>
+
+
+          <label for="firstname" class="text-gray-500 font-bold  text-[15px] mt-10">Course</label>
+
+          <select name="course" class=" bg-white border border-black p-3" >
             <option value="0">Grade iii Hairdressing Course</option>
             <option value="1">Grade iii Dressmaking Course</option>
             <option value="2">Computer Packages</option>
           </select>
 
-          <label for="firstname" class="text-gray-500 font-bold">Course</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <div class="bg-gray-500 h-[1px] w-full "></div>
+          <label for="firstname" class="text-gray-500 font-bold mt-10">More About You</label>
+          <textarea name="" id="" cols="20" rows="10" class="border border-black bg-gray-200 outline-none text-2xl"></textarea>
 
-          <button type="submit" class="p-7 w-1/2 bg-brighterblue my-10 font-extrabold text-white text-3xl transition-all duration-200 hover:bg-black">Submit</button>
+          <button type="submit" id="submit" class="p-5 w-1/2 bg-brighterblue my-10 font-extrabold text-white text-3xl transition-all duration-200 hover:bg-black">Submit</button>
         </form>
       </div>
+
+      <!-- the message appers when there i submit the form -->
+
         
+      <div id="feedback" class="hidden bg-brighterblue p-10 text-white font-bold text-2xl" >
+        <h2> THE FORM HAS BEEN SUBMITTED .</h2>
+      </div>
+
+
+      <!-- footer -->
+
+      
 
     </section>
+
+    <footer>
+
+      <!-- footer -->
+
+      <div class="bg-brighterblue h-1/4 mt-10 bottom-0 w-full p-10 flex flex-col justify-center items center">
+        <!-- head -->
+        
+        <h2 class=" text-center w-full flex flex-col items-center gap-5">
+          <img src="./images/logo.jpg" alt="" class="w-10 h-10 rounded-full object-cover">
+          <p class="text-2xl text-white capitalize font-extrabold ">st bahkita</p>
+        
+        </h2>
+        
+        <!-- contants -->
+        
+        <ul class=" gap-3 flex tablet:justify-center tablet:text-2xl justify-between  font-semibold text-1xl text-white my-5 ">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./apply.html">Apply</a></li>
+          <li><a href="./contact.html">Contanct</a></li>
+          <li><a href="./more.html">More</a></li>
+        </ul>
+        
+        <!-- links -->
+        
+        
+          <div class="text-black space-x-5 pt-5 text-center text-3xl">
+        
+                                
+        
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        
+              </div>
+        
+              <div class="bg-black text-center h-full">
+               <p class="text-2xl font-extrabold text-white p-10" >&copy; 2023. St Bakhita House Of Hope Vocational Training Centre. All Rights Reserved. </p>
+                
+        
+              </div>
+             
+      
+    </footer>
+
+
+    <!-- <script src="./app.js"></script> -->
+    <script src="./form.js"></script>
+
 
     
 </body>

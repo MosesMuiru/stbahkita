@@ -66,12 +66,12 @@
 
 
 </head>
-<body class="fontFamily-poppins">
+<body class="fontFamily-poppins ">
 
     <!-- the landing pagge -->
     <div id="landingpage" class="landingpage    w-screen  h-screen font-poppins relative">
         
-        <nav class=" tablet:px-20 py-4 flex justify-between bg-slate-100  items-center ">
+        <nav class="  py-4 flex justify-between bg-white tablet:px-[186px]  items-center ">
             <!-- log0 -->
             <div>
                <img src="./images/banner (1).jpg" class="w-20 h-30 rounded-full ml-10" alt="">
@@ -82,12 +82,12 @@
             <div>
 
                 
-                <ul class="links hidden smalllaptop:flex space-x-[2.4rem] font-semibold text-2xl text-gray-500">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./courses.html">Courses</a></li>
-                    <li><a href="./gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contanct</a></li>
-                    <li><a href="">More</a></li>
+                <ul class="links hidden smalllaptop:flex space-x-[2.4rem] text-[17px] text-gray-500">
+                    <li><a href="index.html" class="link " >Home</a></li>
+                    <li><a href="./courses.html" class="link ">Courses</a></li>
+                    <li><a href="./apply.html" class="link">Apply</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                    <li><a href="./about.html" class="link">About</a></li>
                 </ul>
 
 
@@ -96,15 +96,15 @@
 
                   <li id="closeBtn" class="absolute top-4 right-10 text-2xl text-gray-500 cursor-pointer transition-all duration-300 p-3 ease-linear hover:bg-gray-800 hover:text-white rounded-sm"><i class="fa-sharp fa-solid fa-xmark "></i></li>
 
-                    <li><a href="">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <div class="line bg-gray-400"></div>
-                    <li><a href="">Courses</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
                     <div class="line bg-gray-400"></div>
-                    <li><a href="">Gallery</a></li>
+                    <li><a href="./apply.html">Apply</a></li>
                     <div class="line bg-gray-400"></div>
-                    <li><a href="">Contanct</a></li>
+                    <li><a href="./contact.html">Contanct</a></li>
                     <div class="line bg-gray-400"></div>
-                    <li><a href="">More</a></li>
+                    <li><a href="./about.html">about</a></li>
 
                     <div class="text-black space-x-5 pt-5">
 
@@ -121,7 +121,7 @@
 
 
             <!-- communacation -->
-            <div class="font-bold text-darkblue hidden smalllaptop:block">
+            <div class="font-bold text-darkblue hidden laptop:block">
                 <i class="fa-solid fa-envelope" class="px-2"></i>stbakhitahoh@gmail.com <span class="mx-2">|</span>
                 <i class="fa-solid fa-phone"></i> +254114 544 368
                 
@@ -138,13 +138,25 @@
             
         </nav>
 <!-- landing page content -->
-<div class="] w-full h-full flex flex-col  items-center justify-center font-extrabold text-3xl text-white ">
- <h2 id="landingpage-title" class="text-5xl text-white uppercase">Motto</h2>
- <div class="w-1/4 my-6 h-1 bg-white "></div>
- <h3 id="landingpage-info" class="text-6xl text-center py-10 smalllaptop:text-8xl capitalize  w-[80vh]">Our Abilities<br>Our Power<br>Our Future</h3>
- <a href="" class=" py-9 px-20 mt-9 border-2 border- rounded-full transition-all duration-300 ease-linear hover:bg-black ">Apply Now.</a>
+<div class=" w-full  h-full  flex flex-col  items-center justify-center font-[600] text-3xl text-white ">
+ <!-- <h2 id="landingpage-title" class="text-5xl text-white uppercase">Motto</h2> -->
+ <!-- <div class="w-1/4 my-6 h-1 bg-white "></div> -->
+ <h3 id="landingpage-info" class="text-6xl text-center py-10 smalllaptop:text-8xl capitalize  w-[80vh] flex flex-col gap-10">
+  <p class="ml-10">Our Abilities</p> 
+  
+<div class=" text-center">
+  Our <span class="p-5 bg-hoverblue font-[700]" data-val="Power">Power</span> 
+</div>
+<p class="">  Our Future</p>
+</h3>
+ <!-- <a href="./apply.html" class=" py-9 px-20 mt-9 border-2 border- rounded-full transition-all duration-300 ease-linear hover:bg-black ">Apply Now.</a> -->
+ <div class="my-10   w-3/4 flex items-center justify-center gap-[40px]">
+  <a href="./appy.html" class="bg-brighterblue tablet:p-8 font-extrabold  p-6 ">Apply</a>
+  <a href="./about.html" class="bg-white text-black tablet:p-8 p-6 font-extrabold border transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border outline-none">More</a>
 
- <div id="btn" class="space-x-3 mt-9">
+ </div>
+
+ <div id="btn" class="space-x-3  mt-40">
   <button id="next-btn" class="clicked border-2 border-white w-7 h-7 rounded-full"></button>
   <button id="next-btn"class="border-2 border-white  w-7 h-7 rounded-full"></button>
   <button id="next-btn" class="border-2 border-white  w-7 h-7 rounded-full"></button>
@@ -156,38 +168,42 @@
     </div>
 
     <!--  after landing page-->
-    <section class="px-10 py-6 w-screen h-screen  ">
+    <section class="smalllaptop:px-[186px] py-6 w-screen   ">
 
       <!-- title -->
       <!-- <h3 class="capitalize  text-center bg-black p-3 text-white font-bold tablet:text-3xl text-2xl">Welcome to St Bakhita House Of Hope Vocational Training Centre.</h3> -->
       <!-- img -->
-      <div class="tablet:flex w-full h-full  justify-between items-center gap-10">
+      <div class="flex w-full h-full  justify-center items-start gap-10">
 
    
      
       <!-- text and buton -->
-      <div class="flex-row-reverse  justify-start items-start  w-full   ">
-        <p class=" text-[1.3rem] space-y-7 bg-gray-100 p-3 ">
+      <div class="flex-col  justify-center items-center tablet:w-full   ">
+        <h1 class="my-20 text-center font-extrabold text-[30px] text-gray-600">  Welcome to Stbahkita</h1>
+        <p class=" text-[1.4rem] space-y-7 bg-gray-100 py-10 text-center px-10 laptop:px-[100px] leading-[30px]">
 
-          <br>
+          
           St. Bakhita vocational training center offers hairdressing and dressmaking courses to girls and women from needy backgrounds.
 
-          <span class="block"></span>
+          <!-- <span class="block"></span> -->
           The program is led by qualified and experienced teachers and prepares students for a grade 3 NITA Trade Examination.
-          <br>
+          <!-- <br> -->
           Students gain real-life experience through a three-month attachment and receive practical industry-based training.
-          <br>
+          <!-- <br> -->
           The course also includes a basic computer skills program to ensure students are computer-literate.
           </p>
 
-          <button class="bg-brighterblue mt-5 p-6 tablet:mt-10 text-[1.5rem] text-white font-bold tablet:ml-5 transition-all duration-300 ease-linear hover:bg-darkblue">Read More ...</button>
+          <div class="w-full flex items-center justify-center">
+
+            <button class="bg-brighterblue mt-5 p-6 tablet:mt-10 text-[1.5rem] text-white font-bold tablet:ml-5 transition-all duration-300 ease-linear hover:bg-darkblue">Read More ...</button>
+          </div>
 
           
-      </div>
+      <!-- </div>
 
        <img src="./images/class.jpg" class="phone:w-full tablet:h-[450px] mt-3" alt="">
 
-       <div>
+       <div> -->
         
        </div>
     </div>
@@ -211,13 +227,13 @@
       </div>
     </section> -->
     
-    <section class="w-screen tablet:h-[50vh] px-10  flex flex-col justify-center items-center   ">
+    <section class="w-screen tablet:h-[50vh] px-10  flex flex-col justify-center items-center  py-[86px] laptop:px-[186px]">
       <!-- impact we made in the community -->
      
 
        <!-- motoo and values -->
-      <div class="h-3/4 bg-gray-200 px-5">
-        <h3 class="p-5 text-center text-5xl font-extrabold text-brighterblue ">
+      <div class=" bg-gray-200 px-5">
+        <h3 class="p-5 py-10 text-center text-5xl font-extrabold text-brighterblue ">
           OUR GOALS
         </h3>
 
@@ -226,13 +242,13 @@
  
          <!--  -->
          <div class="bg-hoverblue flex flex-col justify-center items-center text-white h-full " >
-           <h1 class="text-5xl font-extrabold text-white mb-10 ">Vision.</h1>
-           <p class="text-2xl leading-9 w-[70%]">We envision a society where women/girls are economically self-sustained  and socially well engaged</p>
+           <h1 class="text-5xl font-extrabold text-white py-1- ">Vision.</h1>
+           <p class="text-2xl leading-9 w-[70%] py-10">We envision a society where women/girls are economically self-sustained  and socially well engaged</p>
          </div>
  
          <div class="bg-hoverblue flex flex-col justify-center items-center text-white h-full  p-2">
-           <h1 class="text-5xl font-extrabold text-white mb-10 ">Mission.</h1>
-           <p class="text-2xl leading-9 w-[70%] "> To Build the capacity of women/girls in vocational skills,  enterprise development as well as community peace building</p>
+           <h1 class="text-5xl font-extrabold text-white py-10 ">Mission.</h1>
+           <p class="text-2xl leading-9 w-[70%] py-10"> To Build the capacity of women/girls in vocational skills,  enterprise development as well as community peace building</p>
          </div>
  
          <!-- <div class="bg-hoverblue flex flex-col justify-center items-center text-white p-20 h-1/2 ">
@@ -241,8 +257,8 @@
          </div> -->
  
          <div class="bg-hoverblue flex flex-col justify-center items-center text-white h-full ">
-           <h1 class="text-5xl font-extrabold text-white mb-10 ">Core Values</h1>
-           <p class="text-2xl leading-9  w-[70%]">Creativity, Results Oriented, Innovation and Improvement, Diversity, Integrity, Compliance</p>
+           <h1 class="text-5xl font-extrabold text-white py-10">Core Values</h1>
+           <p class="text-2xl leading-9  w-[70%] py-10">Creativity, Results Oriented, Innovation and Improvement, Diversity, Integrity, Compliance</p>
          </div>
          
         </div>
@@ -257,7 +273,7 @@
     <section class="tablet:h-[50vh] w-screen ">
 
    
-      <h2 class="mt-20 text-5xl font-extrabold capitalize text-gray-500 text-center">
+      <h2 class="my-[100px] text-5xl font-extrabold capitalize text-gray-500 text-center">
         Our Impact In the community
       </h2>
 
@@ -303,9 +319,9 @@
     <!-- testimonials part -->
     <section class="w-screen tablet:h-screen  flex flex-col items-center justify-center"> 
 
-      <h1 class="pb-[8rem] text-[6rem] font-extrabold fontFamily-ibm tablet:leading-2 text-brighterblue">Testimonials</h1>
+      <h1 class="tablet:pb-[8rem] py-10 tablet:pt-[200px] text-5xl tablet:text-[6rem] font-extrabold fontFamily-ibm tablet:leading-2 text-brighterblue">Testimonials</h1>
 
-      <div class="bg-blue-100 tablet:w-1/2 w-[80%]   ">
+      <div class="bg-blue-100 tablet:w-3/4 laptop:w-1/2 w-[80%]   ">
      
        
         <div id="testimonial" class="flex flex-col items-center justify-center tablet:p-10 p-4">
@@ -348,7 +364,7 @@
 
     </section >
 
-    <section class="relative mt-[100px] pt-[2rem] flex flex-col w-screen tablet:h-[120vh]  ">
+    <section class="relative mt-[100px] pt-[2rem] flex flex-col w-screen  ">
       <!-- imaage/gallery -->
       <!-- <div class="flex h-[100px] w-full items-center justify-center bg-red-500">
          <img src="./images/comp.jpg" class="h-[100px]" alt=""> 
@@ -356,25 +372,25 @@
         <img src="/images/studen2.jpg" alt="">
       </div> -->
 
-      <div class="h-1/4  flex items-center justify-center gap-5 mt-[5rem]">
-        <img src="./images/class.jpg" class="hidden object-cover h-full" alt="">
-        <img src="./images/studen2.jpg" class="hidden object-cover h-full" alt="">
-        <img src="./images/class.jpg" class="object-cover h-full" alt="">
+      <!-- <div class="h-1/4  flex items-center justify-center gap-5 tablet w-full ">
+        <img src="./images/class.jpg" id="img" class="hidden w-1/2 object-cover h-full" alt="">
+        <img src="./images/studen2.jpg" id="img" class="hidden object-cover h-full" alt="">
+        <img src="./images/class.jpg" id="img" class="object-cover tablet:w-1/2 h-full" alt="">
 
-        <button  class="ml-10 animate-bounce bg-blue-200 text-extrabold text-2xl text-center items-center p-5 rounded-full transition-all duration-200 linear hover:border-2 hover:bg-white hover:border-blue-500 "><i class="fa-solid fa-forward"></i></button>
+        <button  class="hidden tablet:block ml-10 animate-pulse bg-blue-300 text-extrabold text-2xl text-center items-center p-5 rounded-full transition-all duration-200 linear hover:border-2 hover:bg-white hover:border-blue-500 "><i class="fa-solid fa-forward"></i></button>
       
-      </div>
+      </div> -->
 
       <!-- sponsores -->
       <div class=" flex flex-col items-center justify-start ">
-        <h2 class="py-10 text-blue-600 font-extrabold  text-5xl ">Our Sponsors and Partners</h2>
+        <h2 class="py-20 text-blue-600 font-extrabold  tablet:text-5xl text-3xl px-5">Our Sponsors and Partners</h2>
 
-        <div class="h-[150px] w-1/2 flex bg-red-50 items-center justify-center gap-8 ">
+        <div class="h-[150px] w-full tablet:w-1/2 flex  items-center justify-center gap-8 ">
           
-          <img src="./images/Eldohub.png" class="w-full h-full " alt="">
-          <img src="./images/elizabethlogo.jpg" class="w-full h-full " alt="">
-          <img src="./images/pomoclogo.jpg" class="w-full h-full " alt="">
-          <img src="./images/solviclogo.png" class="w-full h-full " alt="">
+          <img src="./images/Eldohub.png" class="w-[100px] h-[100px] tablet:w-full tablet:h-full " alt="">
+          <img src="./images/elizabethlogo.jpg" class="w-[50px] h-[80px]  tablet:w-full tablet:h-full" alt="">
+          <img src="./images/pomoclogo.jpg" class="w-[50px] h-[80px] tablet:w-full tablet:h-full" alt="">
+          <img src="./images/solviclogo.png" class="w-[50px] h-[80px] tablet:w-full tablet:h-full" alt="">
   
         </div>
       </div>
@@ -398,11 +414,11 @@
         <!-- contants -->
         
         <ul class=" gap-3 flex tablet:justify-center tablet:text-2xl justify-between  font-semibold text-1xl text-white my-5 ">
-          <li><a href="">Home</a></li>
-          <li><a href="">Courses</a></li>
-          <li><a href="">Gallery</a></li>
-          <li><a href="">Contanct</a></li>
-          <li><a href="">More</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./apply.html">Apply</a></li>
+          <li><a href="./contact.html">Contanct</a></li>
+          <li><a href="./more.html">More</a></li>
         </ul>
         
         <!-- links -->
@@ -428,6 +444,7 @@
       
     </footer>
 
+    <script src="nav.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
