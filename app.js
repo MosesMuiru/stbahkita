@@ -1,7 +1,7 @@
 
 
 const landingpage = document.getElementById("landingpage")
-const landingpageInfo = document.getElementById("landingpage-info")
+// const landingpageInfo = document.getElementById("landingpage-info")
 const landingpageTitle = document.getElementById("landingpage-title")
 const btn = document.getElementById("btn")
 const testimonial = document.querySelectorAll("#testimonial")
