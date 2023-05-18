@@ -66,7 +66,7 @@
 
 
 </head>
-<body class="fontFamily-poppins ">
+<body class="font-serif ">
 
     <!-- the landing pagge -->
     <div id="landingpage" class="landingpage    w-screen  h-screen font-poppins relative">
@@ -151,7 +151,7 @@
 </h3>
  <!-- <a href="./apply.html" class=" py-9 px-20 mt-9 border-2 border- rounded-full transition-all duration-300 ease-linear hover:bg-black ">Apply Now.</a> -->
  <div class="my-10   w-3/4 flex items-center justify-center gap-[40px]">
-  <a href="./appy.html" class="bg-brighterblue tablet:p-8 font-extrabold  p-6 ">Apply</a>
+  <a href="/apply.html" class="bg-brighterblue tablet:p-8 font-extrabold  p-6 ">Apply</a>
   <a href="./about.html" class="bg-white text-black tablet:p-8 p-6 font-extrabold border transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border outline-none">More</a>
 
  </div>
@@ -194,8 +194,11 @@
           </p>
 
           <div class="w-full flex items-center justify-center">
+<a href="./about.html">
 
-            <button class="bg-brighterblue mt-5 p-6 tablet:mt-10 text-[1.5rem] text-white font-bold tablet:ml-5 transition-all duration-300 ease-linear hover:bg-darkblue">Read More ...</button>
+
+  <button  class="bg-brighterblue mt-5 p-6 tablet:mt-10 text-[1.5rem] text-white font-bold tablet:ml-5 transition-all duration-300 ease-linear hover:bg-darkblue">Read More ...</button>
+</a>
           </div>
 
           
@@ -236,19 +239,19 @@
         <h3 class="p-5 py-10 text-center text-5xl font-extrabold text-brighterblue ">
           OUR GOALS
         </h3>
-
-        <div class=" bg-gray-100 h-full tablet:flex  tablet:flex-row flex flex-col justify-center items-center gap-5 text">
+<!-- tablet:flex  tablet:flex-row flex flex-col justify-center -->
+        <div class=" bg-gray-100 h-full grid tablet:grid-cols-3 grid-rows-1  items-center gap-5 text">
          
  
          <!--  -->
-         <div class="bg-hoverblue flex flex-col justify-center items-center text-white h-full " >
-           <h1 class="text-5xl font-extrabold text-white py-1- ">Vision.</h1>
-           <p class="text-2xl leading-9 w-[70%] py-10">We envision a society where women/girls are economically self-sustained  and socially well engaged</p>
+         <div class="bg-hoverblue flex flex-col justify-center items-center text-white tablet:h-full h-[200px] " >
+           <h1 class="text-5xl font-extrabold text-white pt-5">Vision.</h1>
+           <p class="text-2xl leading-9 w-[70%] py-10 text-center">We envision a society where women/girls are economically self-sustained  and socially well engaged</p>
          </div>
  
-         <div class="bg-hoverblue flex flex-col justify-center items-center text-white h-full  p-2">
-           <h1 class="text-5xl font-extrabold text-white py-10 ">Mission.</h1>
-           <p class="text-2xl leading-9 w-[70%] py-10"> To Build the capacity of women/girls in vocational skills,  enterprise development as well as community peace building</p>
+         <div class="bg-hoverblue flex flex-col justify-center items-center text-white tablet:h-full  p-2 h-[200px]">
+           <h1 class="text-5xl font-extrabold text-white  pt-5">Mission.</h1>
+           <p class="text-2xl leading-9 w-[70%] py-10 text-center"> To Build the capacity of women/girls in vocational skills,  enterprise development as well as community peace building</p>
          </div>
  
          <!-- <div class="bg-hoverblue flex flex-col justify-center items-center text-white p-20 h-1/2 ">
@@ -256,9 +259,9 @@
            <p class="text-2xl leading-9 ">Uweza wetu, nguvu yetu, Kesho yetu(our Abilities, <br> our power, our future)</p>
          </div> -->
  
-         <div class="bg-hoverblue flex flex-col justify-center items-center text-white h-full ">
-           <h1 class="text-5xl font-extrabold text-white py-10">Core Values</h1>
-           <p class="text-2xl leading-9  w-[70%] py-10">Creativity, Results Oriented, Innovation and Improvement, Diversity, Integrity, Compliance</p>
+         <div class="bg-hoverblue flex flex-col justify-center items-center text-white tablet:h-full h-[200px] ">
+           <h1 class="text-5xl font-extrabold text-white pt-5">Core Values</h1>
+           <p class="text-2xl leading-9  w-[70%] py-10 text-center ">Creativity, Results Oriented, Innovation and Improvement, Diversity, Integrity, Compliance</p>
          </div>
          
         </div>
@@ -270,46 +273,44 @@
     </section>
 
     <!-- section with the impacts -->
-    <section class="tablet:h-[50vh] w-screen ">
+    <section class="tablet:h-[50vh] w-full p-4 flex flex-col ">
 
    
-      <h2 class="my-[100px] text-5xl font-extrabold capitalize text-gray-500 text-center">
+      <h2 class="tablet:mt-[100px] my-[30px] text-5xl font-extrabold capitalize text-gray-500 text-center">
         Our Impact In the community
       </h2>
 
       
 
 
-        <div class="flex  flex-row   items-center justify-center mt-20  space-x-7 ">
+        <div class=" grid grid-cols-4 gap-5 tablet:mx-[186px] ">
 
-          <div class="tablet:flex h-full gap-7   ">
-            <div class=" bg-gray-200 flex flex-col items-center justify-center p-20  ">
-              <h2 class="font-black text-5xl"><p class="num" data-val="840">840 </p>+</h2>
-              <p>Girls/women trained</p>
+            <div class=" bg-gray-200 flex flex-col items-center justify-center tablet:p-20 p-10  tablet:mb-0">
+              <h2 class="font-black text-3xl flex "><p class="num tablet:text-6xl text-2xl " data-val="840">840 </p>+</h2>
+              <p class="text-2xl">Girls/women trained</p>
             </div>
     
-            <div class=" bg-gray-200 flex flex-col items-center justify-center p-20 ">
-              <h2 class="font-black text-5xl"><p class="num" data-val="3">3</p>+</h2>
-              <p>Courses Offered</p> 
+            <div class=" bg-gray-200 flex flex-col items-center justify-center tablet:p-20 p-10 ">
+              <h2 class="font-black text-3xl flex "><p class="num tablet:text-6xl" data-val="3">3</p>+</h2>
+              <p class="text-2xl">Courses Offered</p> 
             </div>
-          </div>
+        
    
 
 
-          <div class="tablet:flex items-center justify-center gap-7">
+         
 
 
-            <div class=" bg-gray-200 flex flex-col items-center justify-center p-20">
-              <h2 class="font-black text-5xl"><p class="num" data-val="940">940</p>+</h2>
-              <p>Girls in Computer</p>
+            <div class=" bg-gray-200 flex flex-col items-center justify-center tablet:p-20 p-10 ">
+              <h2 class="font-black text-3xl flex"><p class="num tablet:text-5xl text-2xl " data-val="940">940</p>+</h2>
+              <p class="text-2xl">Girls in Computer</p>
             </div>
     
     
-            <div class=" bg-gray-200 flex flex-col items-center justify-center p-20">
-              <h2 class="font-black text-5xl "><p class="num" data-val="4">4</p>+</h2>
-              <p>Supporters</p> 
+            <div class=" bg-gray-200 flex flex-col items-center justify-center tablet:p-20 p-10">
+              <h2 class="font-black text-3xl  flex"><p class="num tablet:text-5xl text-2xl " data-val="4">4</p>+</h2>
+              <p class="text-2xl">Supporters</p> 
             </div>
-          </div>
 
 
       </div>
@@ -327,7 +328,7 @@
         <div id="testimonial" class="flex flex-col items-center justify-center tablet:p-10 p-4">
           <img src="./images/lili.jpg" class="w-[100px] h-[100px] rounded-full" alt="">
 
-          <p class="tablet:w-3/4 text-[1.5rem] tablet:p-5 w-full">
+          <p class="tablet:w-3/4 text-[1.5rem] tablet:p-5 w-full text-center">
             Without any doubt St Bakhita is the best hairdressing vocational training center there is, after graduation, i worked in a Salon and beauty parlor in Eldoret Town. After a year i was ready to go on my own by opening my own salon. One year later i had employees: a hairstylist and a nail art artist, I am able to feed my family. I could not accomplish this without their mentorship.
           </p>
           <i class="fa-solid fa-quote-left text-[5rem] tablet:text-[7rem] font-extrabold text-brighterblue "></i>
@@ -364,7 +365,7 @@
 
     </section >
 
-    <section class="relative mt-[100px] pt-[2rem] flex flex-col w-screen  ">
+    <section class="relative tablet:mt-[20px] pt-[2rem] flex flex-col w-screen tablet:h-1/2 items-center justify-center ">
       <!-- imaage/gallery -->
       <!-- <div class="flex h-[100px] w-full items-center justify-center bg-red-500">
          <img src="./images/comp.jpg" class="h-[100px]" alt=""> 
@@ -382,15 +383,15 @@
       </div> -->
 
       <!-- sponsores -->
-      <div class=" flex flex-col items-center justify-start ">
-        <h2 class="py-20 text-blue-600 font-extrabold  tablet:text-5xl text-3xl px-5">Our Sponsors and Partners</h2>
+      <div class=" flex flex-col items-center justify-center gap-5 ">
+        <h2 class=" text-blue-600 font-extrabold  tablet:text-5xl text-3xl px-5 tablet:py-20 py-10">Our Sponsors and Partners</h2>
 
-        <div class="h-[150px] w-full tablet:w-1/2 flex  items-center justify-center gap-8 ">
+        <div class="w-full items-center tablet:w-1/2 grid grid-cols-4  gap-10 p">
           
-          <img src="./images/Eldohub.png" class="w-[100px] h-[100px] tablet:w-full tablet:h-full " alt="">
-          <img src="./images/elizabethlogo.jpg" class="w-[50px] h-[80px]  tablet:w-full tablet:h-full" alt="">
-          <img src="./images/pomoclogo.jpg" class="w-[50px] h-[80px] tablet:w-full tablet:h-full" alt="">
-          <img src="./images/solviclogo.png" class="w-[50px] h-[80px] tablet:w-full tablet:h-full" alt="">
+          <img src="./images/Eldohub.png" class=" tablet:w-full tablet:h-full " alt="">
+          <img src="./images/elizabethlogo.jpg" class=" tablet:w-full tablet:h-full" alt="">
+          <img src="./images/pomoclogo.jpg" class=" tablet:w-full tablet:h-full" alt="">
+          <img src="./images/solviclogo.png" class="tablet:w-full tablet:h-full" alt="">
   
         </div>
       </div>
