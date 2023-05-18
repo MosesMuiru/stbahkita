@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+        <title>
+        St. Bahkita
+        </title>
+        <!-- css -->
+        <link rel="stylesheet" href="./index.css">
+    
+        <!-- fonts -->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Nunito+Sans:ital,wght@0,200;0,400;0,500;0,700;0,1000;1,800&family=Poppins:wght@400;900;500&display=swap" rel="stylesheet">
+    
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/2a990dac14.js" crossorigin="anonymous"></script>
+        <!-- tailwind config -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    darkblue: '#000774',
+                    hoverblue:'#0040a6',
+                    brighterblue:'#1724f0'
+                  },
+    
+                  fontFamily:{
+                    poppins:["Poppins","san-serif"]
+               
+                  },
+    
+        screens: {
+            'phone':'320px',
+          'tablet': '640px',
+         "smalllaptop":"720px",
+    
+          'laptop': '1024px',
+    
+    
+          'desktop': '1280px',
+          
+        },
+    
+      }
+    }
+                }
+              
+            
+          </script>
+    
+    <!-- swipper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    
+    </head>
+<body class="font-poppins">
+
+    
+    <section class="bg-[#008cff] landingpage">
+
+
+
+        <!-- the landing pagge -->
+        <div id="landingpage" class="h-screen   w-screen  relative">
+              
+        
+          <nav class="  py-4 flex justify-between bg-white tablet:px-[186px]  items-center ">
+            <!-- log0 -->
+            <div>
+               <img src="./images/banner (1).jpg" class="w-20 h-30 rounded-full ml-10" alt="">
+            </div>
+
+
+            <!-- links -->
+            <div>
+
+                
+                <ul class="links hidden smalllaptop:flex space-x-[2.4rem] text-[17px] text-gray-500">
+                    <li><a href="index.html" class="link " >Home</a></li>
+                    <li><a href="./courses.html" class="link ">Courses</a></li>
+                    <li><a href="./apply.html" class="link">Apply</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                    <li><a href="./about.html" class="link">About</a></li>
+                </ul>
+
+
+
+                <ul id="mobileList" class="links hidden h-screen  absolute left-0 bg-slate-200  p-40 space-y-10 text-2xl font-bold text-brighterblue transition-all duration-300 ease-linear">
+
+                  <li id="closeBtn" class="absolute top-4 right-10 text-2xl text-gray-500 cursor-pointer transition-all duration-300 p-3 ease-linear hover:bg-gray-800 hover:text-white rounded-sm"><i class="fa-sharp fa-solid fa-xmark "></i></li>
+
+                    <li><a href="./index.html">Home</a></li>
+                    <div class="line bg-gray-400"></div>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <div class="line bg-gray-400"></div>
+                    <li><a href="./apply.html">Apply</a></li>
+                    <div class="line bg-gray-400"></div>
+                    <li><a href="./contact.html">Contanct</a></li>
+                    <div class="line bg-gray-400"></div>
+                    <li><a href="./about.html">about</a></li>
+
+                    <div class="text-black space-x-5 pt-5">
+
+                        
+
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+
+
+                </ul>
+            </div>
+
+
+            <!-- communacation -->
+            <div class="font-bold text-darkblue hidden smalllaptop:block">
+                <i class="fa-solid fa-envelope" class="px-2"></i>stbakhitahoh@gmail.com <span class="mx-2">|</span>
+                <i class="fa-solid fa-phone"></i> +254114 544 368
+                
+            </div>
+
+            <!-- closing and opening buttons -->
+            <div class="smalllaptop:hidden">
+               
+                <!-- open -->
+                
+                <button id="openBtn" class="text-4xl text-gray-800 hover:text-gray-600 cursor-pointer px-7"><i class="fa-solid fa-bars-staggered"></i></button>
+               
+            </div>
+            
+        </nav>
+          <!-- the information -->
+          <div class=" flex flex-col tablet:flex tablet:flex-row h-full tablet:justify-center gap-20  items-center tablet:h-3/4 w-full  " >
+      
+              <!-- about us titile -->
+                  <div class="mt-20 tablet:mx-10">
+                      <h1 class="text-5xl tablet:text-7xl leading-7  font-extrabold text-white capitalize  ">Our Courses.</h1>
+                  </div>
+                  <div class="w-3/4 h-1 bg-white tablet:w-2 tablet:h-3/4"></div>
+              <!-- information -->
+              <div class=" p-10 tablet:text-[2rem] text-[1.9rem] text-white  tablet:px-[2.6rem] bg-black  bg-opacity-50 ">
+                  <ul class="leading-20 list-disc ">
+                      <li>Grade iii hairdressing courses</li>
+                      <li>Grade iii dressingmaking</li>
+                      <li>Computer packages</li>
+      
+                  </ul>
+      
+                  <button class="mt-10 border border-black p-3 text-center bg-white text-black font-semibold px-9 transition-all duration-300 linear hover:bg-black hover:text-white">Apply</button>
+              </div>
+              </div>
+              </div>
+              </section>
+
+              <!-- section containing infor about the courses -->
+              <section class="tablet:h-screen  p-10 tablet:p-0 bg-gray-200 w-full">
+
+                <div class="flex smalllaptop:mx-[186px] flex-col items-center justify-center gap-10">
+                  <h2 class="text-4xl capitalize font-extrabold text-gray-500 text-center py-5 tablet:py-20">Courses information</h2>
+
+                  <!-- computer -->
+                  <div class="tablet:flex justify-between  items-center tablet:w-full h-full tablet:h-full bg-white  tablet:">
+                    <!-- computer -->
+                    <img src="./images/comp.jpg" class="h-full  tablet:w-3/4" alt="">
+                    <!-- infomation -->
+                    <div class="px-5 w-full  h-full relative py-10 ">
+                      <h1 class="text-2xl font-extrabold text-gray-500 text-center py-5" >Computer Packages</h1>
+                      <ul class="text-xl leading-10 list-disc tablet:pl-20 tablet:text-1xl mb-10 px-5 ">
+                        
+                        <li>microsoft office( includes using excel,microsoft word)</li>
+                        <li>Data management using Access</li>
+                        <li>Digital presentation using Power Point</li>
+                        <li>Intro to Graphic design using Publisher</li>
+                        <li>Internet and email</li>
+                        <li>Typing</li>
+                        <li>photocopying , scanning and printing skills</li>
+                      </ul>
+                      <!-- <a href="" class=" bg-black p-4 text-white font-white font-bold mt-10 ">Apply Now.</a> -->
+                      <p>
+                        <a href="" class=" bg-black p-4 text-white font-white font-bold mt-3 ml-[5rem]  ">Apply Now.</a>
+                       </p>
+                    </div>
+                  </div>
+
+                  
+                  <!-- hairdressing -->
+
+                  <div class="tablet:flex tablet:flex-row-reverse justify-between  items-center tablet:w-full tablet:h-3/4 bg-white p-5 tablet:p-10 ">
+                    <!-- computer -->
+                    <img src="./images/hair.jpeg" class="h-[300px] w-full tablet:w-3/4" alt="">
+                    <!-- infomation -->
+                    <div class="px-5 w-full">
+                      <h1 class="text-2xl font-extrabold text-gray-500 text-center py-5 capitalize" ><li >Nita grade iii Hair Dressing</li></h1>
+                      <p class="text-xl leading-10 list-disc tablet:pl-20 tablet:text-1xl">
+                        
+                        This course provides the essential skills needed to establish a successful career in the profitable hair industry, including plaiting, deadlocking, barbering, weaving, coloring, shampooing, and conditioning different hair types. It is designed for individuals interested in starting their own hair business. The course spans one year, with a three-month attachment,
+                      </p>
+                      <p class="text-xl leading-10 list-disc tablet:pl-20 tablet:text-2xl font-bold mb-10">
+                        Requires a KCPE or KCSE certificate as the minimum eligibility requirement.
+                      </p>
+                       <p>
+                        <a href="" class=" bg-black p-4 text-white font-white font-bold mt-3 ml-20 ">Apply Now.</a>
+                       </p>
+                    </div>
+                  </div>
+
+                 <div class="bg-gray-200 w-full h-[30px]">
+          
+                  </div>
+
+                  <!-- dressing making -->
+                  <div class="tablet:flex justify-between  items-center tablet:w-full tablet:h-3/4 bg-white p-5 tablet:p-10 ">
+                    <!-- computer -->
+                    <img src="./images/dressmaking.jpg" class="h-[300px] w-full tablet:w-1/2" alt="">
+                    <!-- infomation -->
+                    <div class="px-5 w-full">
+                      <h1 class="text-2xl font-extrabold text-gray-500 text-center py-5 capitalize" ><li >Nita grade iii dressmaking</li></h1>
+                      <p class="text-xl leading-10 list-disc tablet:pl-20 tablet:text-1xl">
+                        
+                       
+
+This course is well-designed to equip learners with practical skills in tailoring and dressmaking. It is aimed at giving the trainee the knowledge, skills, and attitudes in dressmaking, tailoring, pattern drafting, and garment fashion design.
+
+This course is ideal for an individual who wishes to start their own business in the fashion and design industry.
+
+It is a one-year course that comprises a 3 months attachment.
+
+                      </p>
+                      <p class="text-xl leading-10 list-disc tablet:pl-20 tablet:text-2xl font-bold mb-10">
+                        Requires a KCPE or KCSE certificate as the minimum eligibility requirement.
+                      </p>
+
+                      <p>
+                        <a href="" class=" bg-black p-8 text-white font-white font-bold mt-3 ml-20 ">Apply Now.</a>
+                       </p>
+                    </div>
+                  </div>
+
+                  
+                </div>
+
+
+
+
+                <footer>
+
+                  <!-- footer -->
+            
+                  <div class="bg-brighterblue h-1/4 mt-10 bottom-0 w-full p-10 flex flex-col justify-center items center">
+                    <!-- head -->
+                    
+                    <h2 class=" text-center w-full flex flex-col items-center gap-5">
+                      <img src="./images/logo.jpg" alt="" class="w-10 h-10 rounded-full object-cover">
+                      <p class="text-2xl text-white capitalize font-extrabold ">st bahkita</p>
+                    
+                    </h2>
+                    
+                    <!-- contants -->
+                    
+                    <ul class=" gap-3 flex tablet:justify-center tablet:text-2xl justify-between  font-semibold text-1xl text-white my-5 ">
+                      <li><a href="">Home</a></li>
+                      <li><a href="">Courses</a></li>
+                      <li><a href="">Gallery</a></li>
+                      <li><a href="">Contanct</a></li>
+                      <li><a href="">More</a></li>
+                    </ul>
+                    
+                    <!-- links -->
+                    
+                    
+                      <div class="text-black space-x-5 pt-5 text-center text-3xl">
+                    
+                                            
+                    
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    
+                          </div>
+                    
+                          <div class="bg-black text-center h-full">
+                           <p class="text-2xl font-extrabold text-white p-10" >&copy; 2023. St Bakhita House Of Hope Vocational Training Centre. All Rights Reserved. </p>
+                            
+                    
+                          </div>
+                         
+                  
+                </footer>
+              </section>
+
+              <!-- footer -->
+             
+              
+              <script src="./nav.js"></script>
+</body>
+</html>
