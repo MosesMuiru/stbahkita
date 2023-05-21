@@ -1,3 +1,9 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 .landingpage{
     background: linear-gradient(90deg, rgba(40,40,40,0.9) 100%, rgba(71, 70, 70, 0.5) 30%), url("./images/studen2.jpg");
     background-color: #0066ff;

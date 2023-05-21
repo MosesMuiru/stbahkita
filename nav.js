@@ -1,7 +1,7 @@
 // openning and closing btnn
 const openBtn = document.getElementById("openBtn")
 const closeBtn = document.getElementById("closeBtn")
-
+let powerAnimation = document.getElementById("power-animation")
 const landingpageInfo = document.getElementById("landingpage-info")
 
 // the button at the navigation bar
@@ -47,4 +47,9 @@ two.addEventListener("click",() => {
      secondinfo.classList.remove("hidden")
 })
 
+
+// power animation
+// console.log(powerAnimation.getAttribute("data-val"))
+// let power = powerAnimation.getAnimations("data-val")
+// let
 
