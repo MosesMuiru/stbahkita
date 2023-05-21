@@ -34,6 +34,7 @@
 
               fontFamily:{
                 poppins:["Poppins","san-serif"]
+           
               },
 
     screens: {
@@ -55,133 +56,406 @@
         
       </script>
 
+<!-- swipper -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
 </head>
-<body>
+<body class="font-serif overflow-x-hidden ">
 
     <!-- the landing pagge -->
-    <div id="landingpage" class="landingpage    w-screen  h-screen font-poppins relative">
+    <div id="landingpage" class="landingpage flex flex-col   laptop:w-screen  h-screen font-poppins relative">
         
-        <nav class=" tablet:px-20 py-4 flex justify-between bg-slate-100  items-center ">
-            <!-- log0 -->
-            <div>
-               <img src="./images/banner (1).jpg" class="w-20 h-30 rounded-full ml-10" alt="">
-            </div>
-
-
-            <!-- links -->
-            <div>
-
-                
-                <ul class="links hidden smalllaptop:flex space-x-[2rem] text-1.8xl font-bold text-brighterblue">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Courses</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Contanct</a></li>
-                    <li><a href="">More</a></li>
-                </ul>
-
-
-
-                <ul id="mobileList" class="links hidden h-screen  absolute left-0 bg-slate-200 p-40 space-y-10 text-2xl font-bold text-brighterblue transition-all duration-300 ease-linear">
-
-                  <li id="closeBtn" class="absolute top-4 right-10 text-2xl text-gray-500 cursor-pointer transition-all duration-300 p-3 ease-linear hover:bg-gray-800 hover:text-white rounded-sm"><i class="fa-sharp fa-solid fa-xmark "></i></li>
-
-                    <li><a href="">Home</a></li>
-                    <div class="line bg-gray-400"></div>
-                    <li><a href="">Courses</a></li>
-                    <div class="line bg-gray-400"></div>
-                    <li><a href="">Gallery</a></li>
-                    <div class="line bg-gray-400"></div>
-                    <li><a href="">Contanct</a></li>
-                    <div class="line bg-gray-400"></div>
-                    <li><a href="">More</a></li>
-
-                    <div class="text-black space-x-5 pt-5">
-
-                        
-
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-
-
-                </ul>
-            </div>
-
-
-            <!-- communacation -->
-            <div class="font-bold text-darkblue hidden smalllaptop:block">
-                <i class="fa-solid fa-envelope" class="px-2"></i>stbakhitahoh@gmail.com <span class="mx-2">|</span>
-                <i class="fa-solid fa-phone"></i> +254114 544 368
-                
-            </div>
-
-            <!-- closing and opening buttons -->
-            <div class="smalllaptop:hidden">
-               
-                <!-- open -->
-                
-                <button id="openBtn" class="text-4xl text-gray-800 hover:text-gray-600 cursor-pointer px-7"><i class="fa-solid fa-bars-staggered"></i></button>
-               
-            </div>
+      <nav class="  py-4 flex justify-between bg-white laptop:px-[186px]  items-center ">
+        <!-- log0 -->
+        <div>
+           <img src="./images/banner (1).jpg" class="w-20 h-30 rounded-full ml-10" alt="">
+        </div>
+  
+  
+        <!-- links -->
+        <div>
+  
             
-        </nav>
+            <ul class="links hidden smalllaptop:flex space-x-[2.4rem] text-[12px] text-gray-500">
+                <li><a href="index.html" class="link " >Home</a></li>
+                <li><a href="./courses.html" class="link ">Courses</a></li>
+                <li><a href="./apply.html" class="link">Apply</a></li>
+                <li><a href="contact.html" class="link">Contact</a></li>
+                <li><a href="./about.html" class="link">About</a></li>
+            </ul>
+  
+  
+  
+            <ul id="mobileList" class="links hidden h-screen  absolute left-0 bg-white  tablet:p-40 p-20 space-y-10 text-2xl font-bold text-brighterblue transition-all duration-300 ease-linear">
+  
+              <li id="closeBtn" class="absolute top-4 right-10 text-2xl text-gray-500 cursor-pointer transition-all duration-300 p-3 ease-linear hover:bg-gray-800 hover:text-white rounded-sm"><i class="fa-sharp fa-solid fa-xmark "></i></li>
+  
+                <li><a href="./index.html">Home</a></li>
+                <div class="line bg-gray-400"></div>
+                <li><a href="./courses.html">Courses</a></li>
+                <div class="line bg-gray-400"></div>
+                <li><a href="./apply.html">Apply</a></li>
+                <div class="line bg-gray-400"></div>
+                <li><a href="./contact.html">Contanct</a></li>
+                <div class="line bg-gray-400"></div>
+                <li><a href="./about.html">about</a></li>
+  
+                <div class="text-black space-x-5 pt-5">
+  
+                    
+  
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+  
+  
+            </ul>
+        </div>
+  
+  
+        <!-- communacation -->
+        <div class="font-bold text-darkblue hidden smalllaptop:block">
+            <i class="fa-solid fa-envelope" class="px-2"></i>stbakhitahoh@gmail.com <span class="mx-2">|</span>
+            <i class="fa-solid fa-phone"></i> +254114 544 368
+            
+        </div>
+  
+        <!-- closing and opening buttons -->
+        <div class="smalllaptop:hidden">
+           
+            <!-- open -->
+            
+            <button id="openBtn" class="text-4xl text-gray-800 hover:text-gray-600 cursor-pointer px-7"><i class="fa-solid fa-bars-staggered"></i></button>
+           
+        </div>
+        
+    </nav>
 <!-- landing page content -->
-<div class="w-full h-full flex flex-col items-center justify-center font-extrabold text-3xl text-white">
- <h2 class="text-5xl text-white">Motto</h2>
- <div class="w-1/4 my-6 h-1 bg-white "></div>
- <h3 class="text-6xl text-center py-10 smalllaptop:text-8xl capitalize">Our Abilities,Our Power,Our Future</h3>
- <a href="" class="p-8 mt-9 border-2 border- rounded-full transition-all duration-300 ease-linear hover:bg-black ">Read More</a>
+          <div class=" w-full  h-full  flex flex-col  items-center justify-start tablet:justify-center  py-20  font-[600] text-3xl text-white ">
+ <!-- <h2 id="landingpage-title" class="text-5xl text-white uppercase">Motto</h2> -->
+ <!-- <div class="w-1/4 my-6 h-1 bg-white "></div> -->
+ <h3 id="landingpage-info" class=" tablet:text-6xl text-[1.5rem] leading-[30px] text-center py-10 smalllaptop:text-8xl capitalize  w-[80vh] flex flex-col justify-center items-center gap-10">
+  <p class="text-center ">Our Abilities</p> 
+  
+<div class=" text-center ">
+  Our <span  class=" p-5 bg-hoverblue font-[700]" data-val="Power"> <span id="power-animation" class="  w-full h-full " data-val="Power">Power</span> </span> 
 </div>
+<p class="">  Our Future</p>
+</h3>
+
+<!-- this is the aftermath when either of the botton is clicked -->
+<h1 id="secondinfo" class="hidden px-5   tablet:text-2xl text-[.9rem] font-light text-center tablet:py-10 h-1/4 justify-center  smalllaptop:text-4xl  capitalize w-full tablet:w-[80vh] flex flex-col tablet:gap-10  ">
+  
+"STBAHKITA, where empowerment, creativity, and knowledge merge with fashion, technology, and practical skills in hairdressing, dressmaking, and computer packages, fostering growth for our students."
+</h1>
+
+ <!-- <a href="./apply.html" class=" py-9 px-20 mt-9 border-2 border- rounded-full transition-all duration-300 ease-linear hover:bg-black ">Apply Now.</a> -->
+ <div class="my-20    w-3/4 flex items-center justify-center gap-[40px]">
+  <a href="/apply.html" class="bg-brighterblue tablet:py-8 py-3 text-[1.3rem]    laptop:px-20 px-[2rem] transition-all duration-300 ease-linear  hover:bg-hoverblue">Apply</a>
+  <a href="./about.html" class="bg-white text-black tablet:py-8  text-[1.3rem] py-2 border border-black laptop:px-20 px-[2rem] transition-all duration-300 ease-linear  hover:bg-black hover:text-white">More</a>
+
+ </div>
+
+ <div id="btn" class="space-x-3 ">
+  <button id="one" class="clicked border-2 border-white w-7 h-7 rounded-full"></button>
+  <button id="two"class="border-2 border-white  w-7 h-7 rounded-full"></button>
+ 
+  
+ </div>
+</div>
+
+
     </div>
 
     <!--  after landing page-->
-    <section class="px-10 py-6 w-screen h-screen ">
+    <section class="smalllaptop:px-[186px] py-6 w-screen   ">
 
-      <h3 class="capitalize  text-center bg-black p-3 text-white font-bold tablet:text-3xl text-2xl">Welcome to St Bakhita House Of Hope Vocational Training Centre.</h3>
+      <!-- title -->
+      <!-- <h3 class="capitalize  text-center bg-black p-3 text-white font-bold tablet:text-3xl text-2xl">Welcome to St Bakhita House Of Hope Vocational Training Centre.</h3> -->
       <!-- img -->
-      <div class="tablet:flex w-full h-full  justify-between items-center gap-10">
+      <div class="flex w-full h-full  justify-center items-start gap-10">
 
    
-      <img src="./images/class.jpg" class="phone:w-full tablet:h-[450px] mt-3" alt="">
+     
       <!-- text and buton -->
-      <div class="flex flex-col  justify-start items-start  w-full   ">
-        <p class=" text-[1.3rem] space-y-7 bg-gray-100 p-3 ">
+      <div class="flex-col  justify-center items-center tablet:w-full   ">
+        <h1 class="my-20 text-center font-extrabold text-[30px] text-gray-600">  Welcome to Stbahkita</h1>
+        <p class=" tablet:text-[1.4rem] text-[.8rem] space-y-7 bg-gray-100 py-10 text-center px-10 laptop:px-[100px] leading-[1rem]">
 
-          <br>
+          
           St. Bakhita vocational training center offers hairdressing and dressmaking courses to girls and women from needy backgrounds.
 
-          <span class="block"></span>
+          <!-- <span class="block"></span> -->
           The program is led by qualified and experienced teachers and prepares students for a grade 3 NITA Trade Examination.
-          <br>
+          <!-- <br> -->
           Students gain real-life experience through a three-month attachment and receive practical industry-based training.
-          <br>
+          <!-- <br> -->
           The course also includes a basic computer skills program to ensure students are computer-literate.
           </p>
 
-          <button class="bg-brighterblue mt-5 p-6 tablet:mt-10 text-[1.5rem] text-white font-bold tablet:ml-5 transition-all duration-300 ease-linear hover:bg-darkblue">Read More ...</button>
-      </div>
+          <div class="w-full flex items-center justify-center">
+<a href="./about.html">
+
+
+  <button  class="bg-brighterblue mt-5 p-6 tablet:mt-10 laptop:text-[1.5rem] text-white font-bold tablet:ml-5 transition-all duration-300 ease-linear hover:bg-darkblue">Read More ...</button>
+</a>
+          </div>
+
+          
+      <!-- </div>
+
+       <img src="./images/class.jpg" class="phone:w-full tablet:h-[450px] mt-3" alt="">
+
+       <div> -->
+        
+       </div>
     </div>
+
+   
     </section>
 
     <!-- images and testimanials -->
-    <section class="w-screen h-screen ">
+    <!-- <section class="w-screen h-screen ">
       <div class="flex h-[150px] space-x-7 w-full justify-between px-10 mt-5">
         <img class="" src="./images/class.jpg" alt="">
         <img src="./images/class.jpg" alt="">
         <img src="./images/class.jpg" alt="">
         <img src="./images/class.jpg" alt="">
-      </div>
+      </div> -->
      
       <!-- goals -->
-      <div>
+      <!-- <div>
         <h1>Our Goals</h1>
         
       </div>
-    </section>
+    </section> -->
     
+    <section class="w-screen tablet:h-[100vh] px-10  flex flex-col justify-center items-center tablet:py-[86px] laptop:px-[186px]">
+      <!-- impact we made in the community -->
+     
+
+       <!-- motoo and values -->
+      <div class=" bg-gray-200 px-5 w-full">
+        <h3 class="tablet:p-5 tablet:py-10 my-10 text-center tablet:text-5xl text-3xl  font-extrabold text-brighterblue ">
+          OUR GOALS
+        </h3>
+<!-- tablet:flex  tablet:flex-row flex flex-col justify-center -->
+        <div class=" bg-gray-100 h-full grid tablet:grid-cols-3 grid-rows-1  items-center gap-5 text">
+         
+ 
+         <!--  -->
+         <div class="bg-hoverblue flex flex-col justify-center items-center text-white tablet:h-full p-10 " >
+           <h1 class="tablet:text-5xl font-extrabold text-white ">Vision.</h1>
+           <p class="tablet:text-2xl tablet:leading-9 w-[70%]   text-[.7rem] text-center  ">We envision a society where women/girls are economically self-sustained  and socially well engaged</p>
+         </div>
+
+         <div class="bg-hoverblue flex flex-col justify-center items-center text-white tablet:h-full p-10 " >
+          <h1 class="tablet:text-5xl font-extrabold text-white ">Mission.</h1>
+          <p class="tablet:text-2xl tablet:leading-9 w-[70%]   text-[.7rem] text-center   ">To Build the capacity of women/girls in vocational skills,  enterprise development as well as community peace building</p>
+        </div>
+
+        <div class="bg-hoverblue flex flex-col justify-center items-center text-white tablet:h-full p-10 " >
+          <h1 class="tablet:text-5xl font-extrabold text-white ">Core Values.</h1>
+          <p class="tablet:text-2xl tablet:leading-9 w-[70%] text-[.7rem] text-center    ">Creativity, Results Oriented, Innovation and Improvement, Diversity, Integrity, Compliance</p>
+        </div>
+ 
+     
+ 
+         <!-- <div class="bg-hoverblue flex flex-col justify-center items-center text-white p-20 h-1/2 ">
+           <h1 class="text-5xl font-extrabold text-white mb-10 ">Motto.</h1>
+           <p class="text-2xl leading-9 ">Uweza wetu, nguvu yetu, Kesho yetu(our Abilities, <br> our power, our future)</p>
+         </div> -->
+ 
+         
+        </div>
+      </div>
+        <!-- ranking -->
+       
+      </div>
+
+    </section>
+
+    <!-- section with the impacts -->
+    <section class="tablet:h-1/2 w-full p-4 flex flex-col  ">
+
+   
+      <h2 class=" h-full  my-[30px] tablet:text-5xl font-extrabold capitalize text-gray-500 text-center">
+        Our Impact In the community
+      </h2>
+
+      
+
+
+        <div class=" grid tablet:grid-cols-4 grid-cols-2 gap-5 laptop:mx-[186px] tablet:mx-[50px] ">
+
+            <div class=" bg-gray-200 flex flex-col items-center justify-center tablet:p-20 p-10  tablet:mb-0">
+              <h2 class="font-black text-3xl flex "><p class="num tablet:text-6xl text-2xl " data-val="840">840 </p>+</h2>
+              <p class="tablet:text-2xl text-1xl">Girls/women trained</p>
+            </div>
+    
+            <div class=" bg-gray-200 flex flex-col items-center justify-center tablet:p-20 p-10 ">
+              <h2 class="font-black text-3xl flex "><p class="num tablet:text-6xl" data-val="3">3</p>+</h2>
+              <p class="text-2xl">Courses Offered</p> 
+            </div>
+        
+   
+
+
+         
+
+
+            <div class=" bg-gray-200 flex flex-col items-center justify-center tablet:p-20 p-10 ">
+              <h2 class="font-black text-3xl flex"><p class="num tablet:text-5xl text-2xl " data-val="940">940</p>+</h2>
+              <p class="text-2xl">Girls in Computer</p>
+            </div>
+    
+    
+            <div class=" bg-gray-200 flex flex-col items-center justify-center tablet:p-20 p-10">
+              <h2 class="font-black text-3xl  flex"><p class="num tablet:text-5xl text-2xl " data-val="4">4</p>+</h2>
+              <p class="text-2xl">Supporters</p> 
+            </div>
+
+
+      </div>
+
+    </section>
+
+    <!-- testimonials part -->
+    <section class="w-screen tablet:h-screen  tablet:m-10 laptop:m-20 flex flex-col items-center justify-center"> 
+
+      <h1 class=" py-5  tablet:text-5xl text-2xl  tablet:text-[6rem] tablet:mt-40 font-extrabold tablet:leading-2 text-brighterblue">Testimonials</h1>
+
+      <div class="bg-blue-100 tablet:w-3/4 laptop:w-1/2  ">
+     
+       
+        <div id="testimonial" class="flex flex-col items-center justify-center tablet:p-10  p-4">
+          <img src="./images/lili.jpg" class="w-[100px] h-[100px] rounded-full" alt="">
+
+          <p class="tablet:w-3/4 tablet:text-[1.5rem] tablet:p-5 w-full text-center">
+            Without any doubt St Bakhita is the best hairdressing vocational training center there is, after graduation, i worked in a Salon and beauty parlor in Eldoret Town. After a year i was ready to go on my own by opening my own salon. One year later i had employees: a hairstylist and a nail art artist, I am able to feed my family. I could not accomplish this without their mentorship.
+          </p>
+          <i class="fa-solid fa-quote-left text-[5rem] tablet:text-[7rem] font-extrabold text-brighterblue "></i>
+          <p class="tablet:p-10 p-4 text-2xl font-bold">Lilian Wambui</p>
+          <p class="font-bold">Former Student</p>
+
+        </div>
+
+        <div id="testimonial" class="hidden">
+
+          <div class=" flex flex-col items-center justify-center tablet:p-10 p-4">
+            <img src="./images/person2.jpg" class="w-[100px] h-[100px] rounded-full" alt="">
+  
+            <p class="tablet:w-3/4 text-[.9rem] text-center tablet:p-5 w-full">
+             At St Bahkita, they don't only teach but also offer mentorship and entrepreneurship programs which have really shaped my carreer in dressmaking. I have gained valuable expertise in the field of tailoring and dressmaking. I have my own dressingmaking workshop were i create garments for clients ranging from school uniforms,dress,blouses curtains and also garmets repairs. I can fund my family.Thank you St Bahkita.
+            </p>
+            <i class="fa-solid fa-quote-left text-[5rem] tablet:text-[7rem] font-extrabold text-brighterblue "></i>
+            <p class="tablet:p-10 p-4 text-2xl font-bold">Jackline Nchagua</p>
+            <p class="font-bold">Former tudent</p>
+  
+          </div>
+        </div>
+
+
+      </div>
+
+      
+      
+              <div class="w-full flex items-center justify-center my-10">
+      
+                <button id="testiBtn" class=" animate-pulse bg-blue-200 text-extrabold text-2xl text-center items-center p-5 rounded-full transition-all duration-200 linear hover:border-2 hover:bg-white hover:border-blue-500 "><i class="fa-solid fa-forward"></i></button>
+              </div>
+      
+
+    </section >
+
+    <section class="relative tablet:mt-[20px] pt-[2rem] flex flex-col  w-screen tablet:h-1/2 items-center justify-center ">
+      <!-- imaage/gallery -->
+      <!-- <div class="flex h-[100px] w-full items-center justify-center bg-red-500">
+         <img src="./images/comp.jpg" class="h-[100px]" alt=""> 
+        <img src="./images/class.jpg" alt="">
+        <img src="/images/studen2.jpg" alt="">
+      </div> -->
+
+      <!-- <div class="h-1/4  flex items-center justify-center gap-5 tablet w-full ">
+        <img src="./images/class.jpg" id="img" class="hidden w-1/2 object-cover h-full" alt="">
+        <img src="./images/studen2.jpg" id="img" class="hidden object-cover h-full" alt="">
+        <img src="./images/class.jpg" id="img" class="object-cover tablet:w-1/2 h-full" alt="">
+
+        <button  class="hidden tablet:block ml-10 animate-pulse bg-blue-300 text-extrabold text-2xl text-center items-center p-5 rounded-full transition-all duration-200 linear hover:border-2 hover:bg-white hover:border-blue-500 "><i class="fa-solid fa-forward"></i></button>
+      
+      </div> -->
+
+      <!-- sponsores -->
+      <div class=" flex flex-col items-center justify-center gap-5 ">
+        <h2 class=" text-blue-600 font-extrabold  tablet:text-5xl text-2xl tablet:py-10  w-full tablet:mr-20  text-center tablet:mx-[186px]">Our Sponsors and Partners</h2>
+
+        <div class="w-full items-center tablet:w-1/2 grid grid-cols-4  gap-10 mb-10">
+          
+          <img src="./images/Eldohub.png" class=" tablet:w-full tablet:h-full " alt="">
+          <img src="./images/elizabethlogo.jpg" class=" tablet:w-full tablet:h-full" alt="">
+          <img src="./images/pomoclogo.jpg" class=" tablet:w-full tablet:h-full" alt="">
+          <img src="./images/solviclogo.png" class="tablet:w-full tablet:h-full" alt="">
+          
+        </div>
+      </div>
+
+      
+    </section>
+
+    <footer>
+
+      <!-- footer -->
+
+      <div class="bg-brighterblue h-1/4 mt-10 bottom-0 w-full p-10 flex flex-col justify-center items center">
+        <!-- head -->
+        
+        <h2 class=" text-center w-full flex flex-col items-center gap-5">
+          <img src="./images/logo.jpg" alt="" class="w-10 h-10 rounded-full object-cover">
+          <p class="tablet:text-2xl text-[.9rem] text-white capitalize font-extrabold ">st bahkita</p>
+        
+        </h2>
+        
+        <!-- contants -->
+        
+        <ul class=" gap-3 flex tablet:justify-center tablet:text-2xl justify-between  font-semibold text-[.9rem] text-white my-5 ">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./apply.html">Apply</a></li>
+          <li><a href="./contact.html">Contanct</a></li>
+          <li><a href="./more.html">More</a></li>
+        </ul>
+        
+        <!-- links -->
+        
+        
+          <div class="text-white space-x-5 pt-5 text-center text-3xl">
+        
+                                
+        
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        
+              </div>
+        
+              <div class="bg-black text-center h-full">
+               <p class="tablet:text-2xl text-[.9rem] l font-extrabold text-white p-10" >&copy; 2023. St Bakhita House Of Hope Vocational Training Centre. All Rights Reserved. </p>
+                
+        
+              </div>
+             
+      
+    </footer>
+
+    <script src="nav.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
