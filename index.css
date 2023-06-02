@@ -1,13 +1,41 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 .landingpage{
-    background: linear-gradient(90deg, rgba(40,40,40,0.5) 100%, rgba(71, 70, 70, 0.7) 80%), url("./images/studen2.jpg");
+    background: linear-gradient(90deg, rgba(40,40,40,0.4) 100%, rgba(71, 70, 70, 0.5) 30%), url("./images/studen2.jpg");
+    background-color: #0066ff;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    
+
+  
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%); */
+}
+.landing{
+    background: linear-gradient(90deg, rgba(40,40,40,0.5) 50%, rgba(71, 70, 70, 0.1) 100%), url("./images/adminblock.jpg");
+    background-color: #0066ff;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
+    background-attachment: fixed;
+}
+.info{
+    background: linear-gradient(90deg, rgba(40,40,40,0.5) 60%, rgba(70, 39, 39, 0.1) 100%);
+    /* transform: translateY(100px); */
 
+    
+}
+.p{
+   
 
-  
-/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%); */
 }
 
 .line {
@@ -23,10 +51,66 @@
     
 
 }
-.links a:active{
-    color: black;
+.link:active{
+    font-weight: 700;
+
 }
 .links a:hover{
    color: darkblue;
 }
 
+/* clicked overlapping btton */
+.clicked {
+    background-color: white;
+}
+
+/* application form */
+/* .applyform{
+    padding: 10px;
+    padding-top: 3rem;
+    background-color: rgb(224, 224, 224);
+  
+
+} */
+ .invalid{
+    border: 1px solid rgb(255, 43, 43);
+}
+.valid{
+    border:1px solid rgb(50, 131, 50); 
+}
+/* .applyform label{
+    font-size: 1.5rem;
+    
+
+}
+.applyform input{
+        outline: none;
+        background-color: white;
+        color: black;
+
+        height: 20px;
+        padding: 20px;
+        margin-left: 5px;
+        
+} */
+/* .names{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+} */
+.courses{
+    background-color: white;
+    padding: 5px;
+    height: 30px;
+    font-weight: bold;
+
+}
+.goalpage{
+    background: linear-gradient(90deg, rgba(40,40,40,0.4) 100%, rgba(71, 70, 70, 0.5) 30%), url("./images/comp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
